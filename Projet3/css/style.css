@@ -1,0 +1,346 @@
+body{
+  width:100%;
+  overflow-x: hidden;
+  font-size: 20px;
+  margin-left:5px;
+  background-color:orange;
+}
+
+header{
+  width:100%;
+  height: 100px;
+  border: 1px solid black;
+  background-color:rgba(255,255,255,0.7);
+  position:absolute;
+  left:0;
+  top:0;
+  padding-right:50px;
+}
+
+section{
+margin-left:-5px;
+}
+
+#section-h, #section-h2{
+  position:relative;
+  text-align:center;
+  color:red;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#section-h{
+  top: 60px;
+  height:50px;
+  width:10%;
+  left:5%;
+}
+
+#logo{
+  position:relative;
+  left:45%;
+  font-size:60px;
+  bottom : 40px;
+  z-index:2;
+  color:orange;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#slideshow{
+  width:500%;
+  height:600px;
+  overflow: hidden;
+  padding-top:25px;
+}
+
+#slider{
+  display:flex;
+  width:100%;
+  height:500px;
+  background-color:silver;
+  position:relative;
+  left: 0px;
+  top: 50px;
+}
+
+#btn-slide-direction{
+  width:100%;
+  top: 400px;
+  display:flex;
+  justify-content: space-between;
+  position:absolute;
+  z-index:10;
+}
+
+#btn-left,#btn-right,#btn-play,#btn-stop{
+  width:50px;
+  border-radius:100%;
+  border-color:grey;
+  background-color:silver;
+  color:black;
+  font-size:22px;
+  margin: 10px;
+  opacity:0.8;
+}
+
+#btn-play-stop{
+  width:10%;
+  top: 550px;
+  display:flex;
+  justify-content: space-around;
+  position:absolute;
+  z-index:10;
+  left:45%;
+}
+
+.img-diapo{
+  width:100%;
+  height:500px;
+  border: 1px solid black;
+  position:relative;
+  background-size: 100% 100%;
+}
+
+#img_1{
+  background-image: url(../img/diapo/image_1.png);
+}
+
+#img_2{
+  background-image: url(../img/diapo/image_2.png);
+}
+
+#img_3{
+  background-image: url(../img/diapo/image_3.png);
+}
+#img_4{
+  background-image: url(../img/diapo/image_4.png);
+}
+#img_5{
+  background-image: url(../img/diapo/image_5.png);
+}
+
+#map-sub{
+  display:flex;
+  width:100%;
+  height:500px;
+  border:1px solid black;
+}
+
+#map{
+  width:70%;
+  height:500px;
+  border:1px solid black;
+}
+
+#sub{
+  width:30%;
+  height:500px;
+  border:1px solid black;
+  background-color:white;
+}
+
+#info{
+  font-size: 14px;
+}
+
+#my-canvas-container{
+  position: relative;
+  left: 20px;
+  top: -20px;
+}
+
+#booking{
+  width:100%;
+  height:300px;
+  border:1px solid black;
+  background-color:white;
+}
+
+#btn_bkg{
+  position: relative;
+  width: 70px;
+  left: calc(50% - 35px);
+  top: 50px;
+}
+
+#sign{
+  width:29%;
+  height: 180px;
+  position:absolute;
+  z-index:2;
+  display:none;
+  background-color:white;
+}
+
+.my-canvas{
+  width: 200px;
+  height: 70px;
+  border:2px solid rgb(0,0,0);
+  position:absolute;
+  top:28%;
+  left: 20%;
+  z-index:10;
+  display:none;
+}
+
+
+#btn_cancel,#btn_ok{
+  position:relative;
+  top:80px;
+  left:30%;
+  margin-left:10%;
+}
+
+.btn_del{
+  position:absolute;
+width:60px;
+height : 22.5px;
+top:205px;
+margin-left:10%;
+}
+
+#no_sign{
+  position:relative;
+  visibility: hidden;
+  top: 95px;
+  left: 25%;
+  color: red;
+}
+
+@media all and (max-width:920px){
+
+  html{
+    overflow-x: hidden;
+  }
+
+
+  #diapo{
+    display:flex;
+    width:500%;
+    height:500px;
+    background-color:silver;
+    overflow: hidden;
+  }
+
+  #slide{
+    display:flex;
+    width:100%;
+    height:500px;
+    background-color:silver;
+    position:relative;
+    left: 0px;
+    top: 100px;
+  }
+
+  .img-diapo{
+    width:100%;
+    height:500px;
+    border: 1px solid black;
+    position:relative;
+    background-size: 100% 100%;
+  }
+
+  #map-sub{
+    position:relative;
+    flex-direction:column;
+    height:800px;
+  }
+
+  #map{
+    width:100%;
+  }
+
+  #sub{
+    width:100%;
+    height:620px;
+  }
+
+  #reservation{
+    position:relative;
+    height:100px;
+    border:1px solid black;
+    background-color:white;
+  }
+
+  #info{
+    width:500px;
+    font-size: 14px;
+    position:relative;
+    left:calc(50% - 250px);
+  }
+
+  #sign{
+    width:500px;
+    left:calc(50% - 250px);
+  }
+
+  #no_sign{
+    position:relative;
+    top:35px;
+    left:150px;
+  }
+}
+
+@media all and (max-width:750px){
+  html{
+    overflow-x: hidden;
+  }
+
+  #logo{
+    position:relative;
+    left:80px;
+  }
+  #slideshow{
+    height:400px;
+  }
+  #slider{
+    transform:scaleY(0.5);
+    position:relative;
+    top:-100px;
+  }
+  #btn-slide-direction{
+    top:250px;
+  }
+
+  #btn-stop,#btn-play{
+    position:relative;
+    top:-170px;
+  }
+
+  #sign,#info,#bkg{
+    transform: scale(0.8);
+    font-size:17px;
+    left: -30px;
+  }
+
+  #btn_bkg{
+    position:relative;
+    left:50px;
+  }
+
+  #sign{
+    position:relative;
+    top:-50px;
+  }
+
+  #no_sign{
+    position:relative;
+    top:20px;
+    left:-1px;
+  }
+
+  #btn-box-canvas{
+    position:relative;
+    left:-20%;
+    top:-75px;
+  }
+
+  .my-canvas{
+    position:relative;
+    left: -20px;
+  }
+
+  .btn_del{
+    top:185px;
+    left:-10%;
+  }
+}

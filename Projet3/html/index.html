@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>Vélo'v</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+            crossorigin="" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
+        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+            crossorigin=""></script>
+        <script type='text/javascript' src='https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js'></script>
+
+  <body>
+		<header>
+			<h2 id ="logo"> Vélo'v </h2>
+		</header>
+		<div id ="btn-slide-direction">
+				<button id="btn-left"><i class="fas fa-arrow-left"></i></button>
+				<button id="btn-right"><i class="fas fa-arrow-right"></i></button>
+		</div>
+		<div id="btn-play-stop">
+				<button id="btn-play"> <i class="fas fa-play"></i> </button>
+				<button id="btn-stop"> <i class="fas fa-stop"></i> </button>
+		</div>
+		<section id="slideshow">
+			<h2 id="section-h">Tutoriel</h2>
+			<div id="slider">
+				<div id="img_1" class="img-diapo"></div>
+				<div id="img_2" class="img-diapo"></div>
+				<div id="img_3" class="img-diapo"></div>
+				<div id="img_4" class="img-diapo"></div>
+				<div id="img_5" class="img-diapo"></div>
+		 	</div>
+		</section>
+
+		<section id="map-sub">
+			<div id="map">
+
+			</div>
+
+			<div id="sub">
+				<div id="info">
+				</div><br />
+				<div id="sign">
+					<form id="booking-form">
+						Nom :<input  name="name" id="name" required><br />
+						Prénom :<input name="surname" id="surname" required>
+
+					 <h3> Signature : </h3>
+						<div id="my-canvas-container"></div>
+
+						<div id="btn-box-canvas">
+            	<button id="btn_cancel">Annuler</button>
+            	<button id="btn_ok"  type="submit"> Valider</button>
+						</div>
+						<strong id="no_sign">Signature manquante</strong>
+					</form>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="booking">
+			<h2 id="section-h2">Votre réservation</h2>
+			<div id="bkg">
+				<strong id='timer'></strong>
+			</div>
+		</section>
+
+		<script src="../js/diapo.js"></script>
+		<script src="../js/canvas.js"></script>
+		<script src="../js/localStorage.js"></script>
+		<script src="../js/data.js"></script>
+
+  </body>
+</html>
